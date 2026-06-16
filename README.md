@@ -2,8 +2,6 @@
 
 A sleek, modern web application built to fetch and display the latest BigQuery release notes in a beautiful, premium dark-mode interface. 
 
-![App Mockup](assets/bq_release_notes_mockup.jpg)
-
 ## 🌟 Features
 - **Live Feed Parsing**: Fetches the official Google Cloud BigQuery release notes XML feed and parses it dynamically using Python.
 - **Premium Aesthetics**: Glassmorphic UI cards, subtle gradients, and clean layouts to offer an excellent user experience.
