@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigQuery Release Notes</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="developer-tag">Developed By SELVAKUMARAN M</div>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-content">
+                <h1>BigQuery Release Notes</h1>
+                <p class="subtitle">Stay updated with the latest features and fixes</p>
+            </div>
+            <button id="refresh-btn" class="btn-primary" aria-label="Refresh notes">
+                <svg class="refresh-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+                <span class="btn-text">Refresh</span>
+                <div class="spinner hidden" id="refresh-spinner"></div>
+            </button>
+        </header>
+
+        <main class="main-content">
+            <div id="error-message" class="error-banner hidden"></div>
+            <div id="notes-container" class="notes-grid">
+                <!-- Notes will be dynamically populated here -->
+            </div>
+            <div id="loading-overlay" class="loading-overlay">
+                <div class="large-spinner"></div>
+                <div class="loading-text">Fetching latest updates...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
